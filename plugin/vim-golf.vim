@@ -67,7 +67,7 @@ function! Two()
 
     let g:startText = join(readfile(g:startFile), "\n")
     let g:endText = join(readfile(g:endFile), "\n")
-    let g:goalLength = 32
+    let g:goalLength = 52
     let g:answer = 'everything-is-made-of-electrons'
 
     call StartGolf(g:startText, g:endText)
@@ -79,7 +79,7 @@ function! Three()
 
     let g:startText = join(readfile(g:startFile), "\n")
     let g:endText = join(readfile(g:endFile), "\n")
-    let g:goalLength = 32
+    let g:goalLength = 28
     let g:answer = 'quack-quack-I-vant-to-suck-your-blood-quack'
 
     call StartGolf(g:startText, g:endText)
