@@ -24,7 +24,7 @@ function! StartGolf(start, finish)
 endfunction
 
 function! GetFilename(name)
-    return "~/.vim/bundle/vim-golf/plugin/" . a:name
+    return expand("~/.vim/bundle/vim-golf/plugin/" . a:name)
 endfunction
 
 function! FinishGolf(finish, goalLength, string)
