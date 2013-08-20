@@ -1,0 +1,4 @@
+public static void main(String... arghhh) {
+    int first = 0;
+    int second = 1;
+}

@@ -1,0 +1,4 @@
+private static void main(String[] bloop) {
+    double first = 0;
+    double second = 1;
+}

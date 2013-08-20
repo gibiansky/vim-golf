@@ -61,6 +61,30 @@ function! One()
     call StartGolf(g:startText, g:endText)
 endfunction
 
+function! Two()
+    let g:startFile = GetFilename('two.start')
+    let g:endFile =   GetFilename('two.goal')
+
+    let g:startText = join(readfile(g:startFile), "\n")
+    let g:endText = join(readfile(g:endFile), "\n")
+    let g:goalLength = 32
+    let g:answer = 'everything-is-made-of-electrons'
+
+    call StartGolf(g:startText, g:endText)
+endfunction
+
+function! Three()
+    let g:startFile = GetFilename('three.start')
+    let g:endFile = GetFilename('three.goal')
+
+    let g:startText = join(readfile(g:startFile), "\n")
+    let g:endText = join(readfile(g:endFile), "\n")
+    let g:goalLength = 32
+    let g:answer = 'quack-quack-I-vant-to-suck-your-blood-quack'
+
+    call StartGolf(g:startText, g:endText)
+endfunction
+
 command! HoleOne :call One()
 command! HoleTwo :call Two()
 command! HoleThree :call Three()
