@@ -23,6 +23,10 @@ function! StartGolf(start, finish)
     normal qa
 endfunction
 
+function! GetFilename(name)
+    return "~/.vim/bundle/vim-golf/plugin/" . a:name
+endfunction
+
 function! FinishGolf(finish, goalLength, string)
     " Finish recording
     normal q
@@ -46,8 +50,8 @@ function! FinishGolf(finish, goalLength, string)
 endfunction
 
 function! One()
-    let g:startFile = 'one.start'
-    let g:endFile = 'one.goal'
+    let g:startFile = GetFilename('one.start')
+    let g:endFile = GetFilename('one.goal')
 
     let g:startText = join(readfile(g:startFile), "\n")
     let g:endText = join(readfile(g:endFile), "\n")
