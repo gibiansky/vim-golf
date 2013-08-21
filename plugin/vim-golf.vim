@@ -56,7 +56,7 @@ function! One()
     let g:startText = join(readfile(g:startFile), "\n")
     let g:endText = join(readfile(g:endFile), "\n")
     let g:goalLength = 32
-    let g:answer = 'its-only-mooing-when-i-do-it'
+    let g:answer = 'its-only-mooing-when-I-do-it'
 
     call StartGolf(g:startText, g:endText)
 endfunction
